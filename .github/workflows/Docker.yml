@@ -2,9 +2,9 @@ name: Docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ lczero ]
   pull_request:
-    branches: [ main ]
+    branches: [ lczero ]
 
 jobs:
 

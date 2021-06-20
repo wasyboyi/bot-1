@@ -3,7 +3,7 @@ url: "https://lichess.org/"  # Lichess base URL
 
 engine:                      # Engine settings
   dir: "./"                  # DIR containing engines, relative to this project
-  name: "stockfishmodern"    # Binary name of the engine to use
+  name: "lc0"    # Binary name of the engine to use
   protocol: "uci"            # "uci" or "xboard"
   ponder: true               # Think on opponent time
   polyglot:
@@ -21,12 +21,13 @@ engine:                      # Engine settings
     selection: "best_move"   # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in 2. and 3. case)
     max_depth: 100           # Half move max depth
 #   Clear Hash: true         # Clear the hash table
-# engine_options:            # Any custom command line params to pass to the engine
+  engine_options:            # Any custom command line params to pass to the engine
+    weights: ./engine/703808.pb.gz # Lc0 weights file path
 #   cpuct: 3.1
   uci_options:               # Arbitrary UCI options passed to the engine
-    Move Overhead: 100       # Increase if your bot flags games too often
+    MoveOverheadMs: 100      # Increase if your bot flags games too often
     Threads: 7               # Max CPU threads the engine can use
-    Hash: 128                # Max memory (in megabytes) the engine can allocate
+    NNCacheSize: 128         # Max memory (in megabytes) the engine can allocate
 #   go_commands:             # Additional options to pass to the UCI go command
 #     nodes: 1               # Search so many nodes only.
 #     depth: 5               # Search depth ply only.
@@ -39,7 +40,7 @@ engine:                      # Engine settings
 #     nalimov: "Nalimov Path"
 #     scorpio: "Scorpio Path"
 #     syzygy: "Syzygy Path"
-  silence_stderr: false      # Some engines (yes you, leela) are very noisy
+  silence_stderr: true       # Some engines (yes you, leela) are very noisy
 
 abort_time: 30               # Time to abort a game in seconds when there is no activity
 fake_think_time: false       # Artificially slow down the bot to pretend like it's thinking
