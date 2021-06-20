@@ -9,7 +9,7 @@ RUN useradd OIVAS7572 && echo "OIVAS7572:OIVAS7572" | chpasswd && adduser OIVAS7
 USER OIVAS7572
 ADD /engine/ .
 
-# If you are using docker and you want to run any other commands use "RUN echo OIVAS7572 | sudo -S" before
+# If you are using docker and you want to run any other commands use "RUN echo OIVAS7572 | sudo -S" before.
 
 RUN echo OIVAS7572 | sudo -S apt-get install -y wget
 RUN echo OIVAS7572 | sudo -S apt install p7zip-full -y
