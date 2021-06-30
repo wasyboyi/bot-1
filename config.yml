@@ -2,7 +2,6 @@ token: "yourtoken"           # Lichess OAuth2 Token
 url: "https://lichess.org/"  # Lichess base URL
 
 engine:                      # Engine settings
-<<<<<<< HEAD
   dir: "./"                  # Directory containing engines, relative to this project
   name: "lc0"                # Binary name of the engine to use
   protocol: "uci"            # "uci" or "xboard"
