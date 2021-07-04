@@ -21,7 +21,7 @@ You're now connected to lichess and awaiting challenges! Your bot is up and read
 
 ## Bot Infomation
 ENGINE:
-- Lc0 v0.27.0 Openblas
+- [Lc0 v0.27.0 Openblas](https://github.com/OIVAS7572/lichess-bot/blob/lczero/engine/lc0?raw=true) with [703808.pb.gz](https://github.com/OIVAS7572/lichess-bot/blob/lczero/engine/703808.pb.gz?raw=true) weight
 
 Opening Books: 
 - [Goi5.1.bin](https://gitlab.com/OIVAS7572/Goi5.1.bin/-/raw/master/Goi5.1.bin.7z)
