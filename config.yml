@@ -17,9 +17,9 @@ engine:                      # Engine settings.
 #       - engines/atomicbook2.bin
 #     etc.
 #     Use the same pattern for 'giveaway' (antichess), 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
-    min_weight: 1700           # Does not select moves with weight below min_weight (min 0, max: 65535).
+    min_weight: 200           # Does not select moves with weight below min_weight (min 0, max: 65535).
     selection: "best_move"   # Move selection is one of "weighted_random", "uniform_random" or "best_move" (but not below the min_weight in the 2nd and 3rd case).
-    max_depth: 2000           # Half move max depth.
+    max_depth: 500           # Half move max depth.
 # engine_options:            # Any custom command line params to pass to the engine.
 #   cpuct: 3.1
   homemade_options:
@@ -60,7 +60,7 @@ correspondence:
 
 challenge:                   # Incoming challenges.
   concurrency: 1             # Number of games to play simultaneously.
-  sort_by: "best"           # Possible values: "best" and "first".
+  sort_by: "first"           # Possible values: "best" and "first".
   accept_bot: true           # Accepts challenges coming from other bots.
   only_bot: false            # Accept challenges by bots only.
   max_increment: 50          # Maximum amount of increment to accept a challenge. The max is 180. Set to 0 for no increment.
