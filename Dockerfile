@@ -20,11 +20,11 @@ RUN rm Goi5.1.bin.7z
 #RUN 7z e 3-4-5.7z
 #RUN rm 3-4-5.7z
 
-RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/237ed1ef8fddea77779e7fdcde8e4195d92f123b/linux64/stockfish_21072607_x64.zip" -O stockfishmodern.zip
+RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/73ef5b8c4a3ef5e37cc62344d4393b1ee366b7b4/linux64/stockfish_21080508_x64.zip" -O stockfishmodern.zip
 #RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-3475407dc199.nnue" -O nn-3475407dc199.nnue
 RUN 7z e stockfishmodern.zip 
 RUN rm stockfishmodern.zip
-RUN mv stockfish_21072607_x64 stockfishmodern
+RUN mv stockfish_21080508_x64 stockfishmodern
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
