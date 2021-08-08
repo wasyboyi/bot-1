@@ -29,8 +29,6 @@ engine:                      # Engine settings.
     Threads: 4               # Max CPU threads the engine can use.
     Hash: 400                # Max memory (in megabytes) the engine can allocate.
     Ponder: true
-    Use NNUE: true
-    EvalFile: "./nn-46832cfbead3.nnue"
 #   Clear Hash: true         # Clear the hash table
 #   go_commands:             # Additional options to pass to the UCI go command.
 #     nodes: 1               # Search so many nodes only.
