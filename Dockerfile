@@ -24,7 +24,7 @@ RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/dabaf2220fe0c
 #RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-46832cfbead3.nnue" -O nn-46832cfbead3.nnue
 RUN 7z e stockfishmodern.zip 
 RUN rm stockfishmodern.zip
-RUN mv stockfish_21080516_x64_modern stockfishmodern
+RUN mv stockfish* stockfishmodern
 
 COPY requirements.txt .
 RUN python3 -m pip install --no-cache-dir -r requirements.txt
