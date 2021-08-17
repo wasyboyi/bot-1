@@ -20,8 +20,8 @@ RUN rm Goi5.1.bin.7z
 #RUN 7z e 3-4-5.7z
 #RUN rm 3-4-5.7z
 
-RUN wget --no-check-certificate "https://abrok.eu/stockfish/builds/dabaf2220fe0c77400a5f71a91952f510e6a126b/linux64modern/stockfish_21080516_x64_modern.zip" -O stockfishmodern.zip
-#RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-46832cfbead3.nnue" -O nn-46832cfbead3.nnue
+RUN wget --no-check-certificate "https://stockfishchess.org/files/stockfish_14_linux_x64_modern.zip" -O stockfishmodern.zip
+RUN wget --no-check-certificate "https://tests.stockfishchess.org/api/nn/nn-3475407dc199.nnue" -O nn-3475407dc199.nnue
 RUN 7z e stockfishmodern.zip 
 RUN rm stockfishmodern.zip
 RUN mv stockfish* stockfishmodern
