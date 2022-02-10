@@ -1,4 +1,4 @@
-token: "s33aC1xwfCMBtJVE"    # Lichess OAuth2 Token.
+token: "lip_sRsOf0Kbdv75jXbKos7g"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
@@ -71,8 +71,8 @@ challenge:                   # Incoming challenges.
     - standard
     - fromPosition
 #   - antichess
-#   - atomic
-#    - chess960
+   - atomic
+    - chess960
 #   - crazyhouse
 #   - horde
 #   - kingOfTheHill
